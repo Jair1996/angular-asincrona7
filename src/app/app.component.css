@@ -29,8 +29,8 @@
   border-radius: 10px;
 }
 
-.rotate-scale-down {
-  animation: rotate-scale-down 0.9s linear both;
+.rotate-scale-down-blur {
+  animation: rotate-scale-down 0.9s linear both, blur-in 0.9s linear both;
 }
 
 @keyframes rotate-scale-down {
@@ -42,5 +42,16 @@
   }
   100% {
     transform: scale(1) rotateZ(360deg);
+  }
+}
+
+@keyframes blur-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
   }
 }

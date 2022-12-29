@@ -12,20 +12,20 @@ export class AppComponent {
   openAlert: boolean = false;
 
   lanzarDado() {
-    this.btnDado.nativeElement.classList.add('rotate-scale-down');
+    this.btnDado.nativeElement.classList.add('rotate-scale-down-blur');
     this.openAlert = false;
 
     const valor = this.getRandomNumber(1, 6);
 
     if (valor === this.numero) {
       this.openAlert = true;
-      this.btnDado.nativeElement.classList.remove('rotate-scale-down');
+      this.btnDado.nativeElement.classList.remove('rotate-scale-down-blur');
       return;
     }
 
     setTimeout(() => {
       this.numero = valor;
-      this.btnDado.nativeElement.classList.remove('rotate-scale-down');
+      this.btnDado.nativeElement.classList.remove('rotate-scale-down-blur');
     }, 1000);
   }
 
