@@ -1,0 +1,30 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.dado {
+  width: 200px;
+  height: 200px;
+  font-size: 100px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border-radius: 40px;
+  border: none;
+}
+
+.dado:hover {
+  background-color: rgb(63, 63, 63);
+}
+
+.alert {
+  background-color: white;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 10px;
+}
